@@ -1,0 +1,177 @@
+<%- include("partials/header");%>
+
+<section>
+  <div class="img-section">
+    <div>
+      <div class="text-container">
+      <h1 class="fade-in fadein-up">REQUEST A QUOTE</h1>
+      <p class="fade-in fadein-up-text">Let us give you the best offer for your special day</p>
+    </div>
+    </div>
+    
+    <img src="public/images/3.jpg" alt="">
+  </div>
+</section>
+
+<section id="section-plain">
+  <div class="fade-in fadein-up">
+  <p id="form-anchor">We like to know our clients very well to ensure we’re a good fit.
+    If you could take just one minute to answer the following questions
+    If you could take just one minute to answer the following questions.</p>
+    <ul class="tabs">
+      <div class="tab">
+        <li class="weddings tab-active"><a href="#form-anchor">WEDDINGS</a></li>
+      </div>
+      
+      <div class="tab">
+      <li class="engagements "><a href="#form-anchor">ENGAGEMENTS</a></li>
+      </div>
+
+      <div class="tab">
+      <li class="casual-shoots "><a href="#form-anchor">CASUAL SHOOTS</a></li>
+      </div>
+    </ul>
+  </div>
+    <div class="forms">
+      <div class="form-tab weddings fade-in fadein-up-form-tab tab-active ">
+        <form action="/quote-request" method="POST">
+          
+            <div class="form-group">
+              <div class="form-item">
+                <label>BRIDE'S NAME</label>
+                <input type="text" name="bName" required>
+              </div>
+              <div class="form-item">
+                <label>GROOMS NAME</label>
+                <input type="text" name="gName" required>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <div class="form-item">
+                <label>Email</label>
+                <input type="email" name="email" required>
+              </div>
+              <div class="form-item">
+                <label>WDDING DATE</label>
+                <input type="date" name="wDate" required>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <div class="form-item">
+                <label>TIME</label>
+                <input type="time" name="time" required>
+              </div>
+              <div class="form-item">
+                <label>LOCATION(RECEPTION)</label>
+                <input type="text" name="location" required>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <div class="form-item">
+                <label>TYPE OF THE CEREMONY</label>
+                <input type="text" name="type">
+              </div>
+              <div class="form-item">
+                <label>NO. OF GUESTS</label>
+                <input type="text" name="nog" required>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <div class="form-item">
+                <label>MAKEUP ARTIST</label>
+                <input type="text" name="makeupArtist">
+              </div>
+              <div class="form-item">
+                <label>HOW DID YOUR HEAR ABOUT US?</label>
+                <input type="text" name="aboutUs">
+              </div>
+            </div>
+  
+            <div class="form-item">
+              <label>Message</label>
+               <textarea name="message" id="" cols="30" rows="10" required></textarea>
+            </div>  
+  
+            <button type="submit" name="action" value="wedding" class="btn btn-dark contact-us-btn">SUBMIT</button>  
+        </form>
+      </div>
+  
+  
+      <div  class="form-tab engagements fade-in fadein-up-form-tab">
+        <form action="/quote-request" method="POST">
+          
+            <div class="form-group">
+              <div class="form-item">
+                <label>BRIDE'S NAME</label>
+                <input type="text" name="bName" required>
+              </div>
+              <div class="form-item">
+                <label>GROOMS NAME</label>
+                <input type="text" name="gName" required>
+              </div>
+            </div>
+  
+            <!-- <div class="form-group">
+              <div class="form-item">
+                <label>BRIDE'S NAME</label>
+                <input type="text" name="bName" required>
+              </div>
+              <div class="form-item">
+                <label>GROOMS NAME</label>
+                <input type="text" name="gName" required>
+              </div>
+            </div> -->
+  
+            <div class="form-item">
+              <label>Message</label>
+               <textarea name="message" id="" cols="30" rows="10" required></textarea>
+            </div>  
+  
+            <button type="submit" name="action" value="engagement" class="btn btn-dark contact-us-btn">SUBMIT</button>  
+        </form>
+      </div>
+  
+  
+      <div  class="form-tab casual-shoots fade-in fadein-up-form-tab">
+        <form action="/quote-request" method="POST">
+          
+            <div class="form-group">
+              <div class="form-item">
+                <label>BRIDE'S NAME</label>
+                <input type="text" name="bName" required>
+              </div>
+              <div class="form-item">
+                <label>GROOMS NAME</label>
+                <input type="text" name="gName" required>
+              </div>
+            </div>
+  
+            <div class="form-group">
+              <div class="form-item">
+                <label>Email</label>
+                <input type="email" name="email" required>
+              </div>
+              <div class="form-item">
+                <label>WDDING DATE</label>
+                <input type="date" name="wDate" required>
+              </div>
+            </div>
+  
+            <div class="form-item">
+              <label>Message</label>
+               <textarea name="message" id="" cols="30" rows="10" required></textarea>
+            </div>  
+  
+            <button type="submit" name="action" value="casual" class="btn btn-dark contact-us-btn">SUBMIT</button>  
+        </form>
+      </div>
+    </div>
+    
+    
+</section>
+
+<%- include("partials/footer") -%>

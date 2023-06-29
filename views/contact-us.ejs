@@ -1,0 +1,113 @@
+<%- include("partials/header");%>
+ 
+
+<section>
+  <div class="img-section">
+    <div>
+      <div class="text-container">
+      <h1 class="fade-in fadein-up">CONTACT US</h1>
+      <p class="fade-in fadein-up-text">If you feel like you can trust us with 
+          your story, please get in touch
+      </p>
+    </div>
+    </div>
+    
+    <img src="public/images/3.jpg" alt="">
+  </div>
+</section>
+
+<section id="section-plain">
+    <div class="row fade-in fadein-up-text">
+        <div class="col-lg-6 map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d368.3285846925698!2d79.93161693502499!3d6.796652328262137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae24fed76374041%3A0xa1d074ee24d550ec!2sGreenland%20Food%20Center!5e0!3m2!1sen!2slk!4v1634114830576!5m2!1sen!2slk" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="col-lg-6 contact-us-text">
+            <p>We do not take every wedding we’re approached to photograph. It’s 
+                truly important that we work with couples who share in our brand 
+                values. We’d love to hear more about you and your story. Please 
+                contact us and we’ll be in touch basically as soon as humanly 
+                possible.
+            </p>
+
+            <div class="row">
+
+            
+                <div class="col-lg-6 footer-column footer-column-flex">
+                  <div class="footer-info">
+                    <i class="fas fa-phone-alt fa-2x icons"></i>
+                    <div>
+                      <h6>CALL US</h6>
+                      <p>+94 77 99 44 812</p>
+                      <p>+94 77 99 44 1</p>
+                    </div>
+                  </div>
+                  
+    
+                  
+                  <div class="footer-info">
+                    <i class="fas fa-map-marker-alt fa-2x icons"></i>
+                    <div >
+                      <h6>LOCATION</h6>
+                    <p>No 50, Hena Road, Mount-Lavinia.</p>
+                  </div>
+                  </div>
+                  
+                </div>
+    
+                <div class="col-lg-6 footer-column footer-column-flex ">
+                  <div class="footer-info">
+                    <i class="fas fa-envelope fa-2x icons"></i>
+                    <div>
+                      <h6>WRITE TO US</h6>
+                      <p>theweddingenchant@gmail.com</p>
+                    </div>
+                  </div>
+    
+                  <div class="footer-info">
+                    <i class="fas fa-clock fa-2x icons"></i>
+                    <div>
+                      <h6>WORKING HOURS</h6>
+                      <p>Mon - Sat : 9AM - 5PM</p>
+                    </div>
+                  </div>                     
+                </div>
+              </div>
+            
+        </div>
+    </div> 
+    <div class="fade-in fadein-up">
+      <h1>GET IN TOUCH</h1>
+      <p>
+          It is indeed a pleasure to know that you are interested in what we do here at Beyond Destiny.
+      </p>
+  </div>
+    <div  class="form fade-in fadein-up-text">
+    <form action="/contact-us" method="POST">
+      
+        <div class="form-group">
+          <div class="form-item">
+            <label>Name</label>
+            <input type="text" name="name" required>
+          </div>
+          <div class="form-item">
+            <label>Email Address</label>
+            <input type="text" name="email" required>
+          </div>
+        </div>
+
+        <div class="form-item">
+          <label>Subject</label>
+          <input type="text" name="subject">
+        </div>
+
+        <div class="form-item">
+          <label>Message</label>
+           <textarea name="message" id="" cols="30" rows="10" required></textarea>
+        </div>  
+
+        <button type="submit" class="btn btn-dark contact-us-btn">SUBMIT</button>  
+    </form>
+  </div>
+</section>
+
+<%- include("partials/footer") -%>
